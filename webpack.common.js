@@ -3,7 +3,7 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: "./src/index.js",
+    main: "./src/assets/scripts/index.js",
     vendor: "./src/vendor.js"
   },
   module: {
