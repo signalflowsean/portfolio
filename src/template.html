@@ -9,19 +9,66 @@
 
   </head>
   <body>
-      <css-doodle>
-          :doodle {
-            @grid: 20 / 100vmax;
-            background: #0a0c27;
-            font-family: sans-serif;
+      <!-- CSS DOODLE EXPERIMENTS -->
+      <!-- #1 -->
+      <!-- <css-doodle>
+        :doodle {
+          @grid: 20 / 100vmax;
+          background: #0a0c27;
+          font-family: sans-serif;
+        }
+        :after {
+          content: \@hex(@r(0x2500, 0x257f));
+          color: hsla(@r(360), 70%, 70%, @r(.9));
+          font-size: 5ßvmax;
+        }
+      </css-doodle> -->
+
+      <!-- #2 -->
+      <!-- <css-doodle class="doodle">
+        :doodle { 
+          @grid: 20 / 100vmax;
+          
+          grid-gap: 1px; 
+        }
+
+        background: #26c6da;  
+
+
+        transform: scale(@rand(.1, .9)) translate3d(@r(50px), @r(100px), 0); 
+        background: hsla(@r(360), 85%, @r(70%, 90%), @r(.9)); 
+        border-radius: (@r(80px))
+
+      </css-doodle> -->
+      <css-doodle class="doodle">
+        :doodle { 
+          @grid: 10 / 100vmax; 
+          grid-gap: 4vmax; 
+          <!-- background: #b2dfdb; -->
+          background: #000000;  
+        }
+
+        transform: scale(@r(.1, 1.9)); 
+        translate3d(@r(150px), @r(200px), 0) rotate(@r(360deg)); 
+        background: hsla(@r(200), 85%, @r(0%, 100%), @r(.9)); 
+
+        @shape: clover @r(20); 
+
+        animation: test infinite @r(100s, 150s) linear; 
+
+        @keyframes test { 
+          0%{ 
+            transform: translate3d(0, 0, 0)
           }
-          :after {
-            content: \@hex(@r(0x2500, 0x257f));
-            color: hsla(@r(360), 70%, 70%, @r(.9));
-            font-size: 5vmax;
+          50%{ 
+            transform: translate3d(@r(-500%, 1000%), @r(-500%, 1500%), 0); 
           }
-        </css-doodle>
+          100%{ 
+            transform: translate3d(0, 0, 0)
+          }
+        }
+      </css-doodle>
   
-    <h1>HI</h1>
+    <!-- <h1>HI</h1> -->
   </body>
 </html>
