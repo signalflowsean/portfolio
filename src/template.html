@@ -4,71 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Webpack Portfolio</title>
-    <script src="https://unpkg.com/css-doodle@0.7.3/css-doodle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.7.3/css-doodle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Monofett&display=swap" rel="stylesheet">
+  
 
   </head>
   <body>
-      <!-- CSS DOODLE EXPERIMENTS -->
-      <!-- #1 -->
-      <!-- <css-doodle>
-        :doodle {
-          @grid: 20 / 100vmax;
-          background: #0a0c27;
-          font-family: sans-serif;
+      <header class="header">
+        <h1>SIGNALFLOWSEAN</h1>
+
+      </header>
+
+      <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu nibh ac risus sagittis euismod. Nunc varius a diam eu scelerisque. Nulla accumsan sed mauris in pellentesque. Sed velit felis, molestie in metus a, tristique placerat nibh. Vestibulum venenatis ut nibh eget vestibulum. Nullam blandit quam a mattis vulputate. Cras sed efficitur massa, eget aliquet nisi. Vivamus vitae cursus est. Donec porttitor, turpis nec sagittis ornare, dolor ante vestibulum nisl, ac vulputate ipsum nisi nec enim. Etiam non elit mollis, aliquam urna eget, tincidunt tortor. Mauris vitae vehicula odio, vitae tempus nisi. Ut interdum gravida massa, lacinia varius arcu auctor eu. Nunc a nunc eget nisl ultricies rhoncus eget ut arcu. Nam sed scelerisque erat.
+
+            Praesent non facilisis nisi, quis eleifend lorem. Vivamus at nibh lobortis, hendrerit dui sit amet, accumsan purus. Sed sit amet purus pulvinar, feugiat ex vel, consectetur purus. Proin et lacinia purus. Aenean laoreet leo sed dui lobortis tincidunt. Praesent egestas mi imperdiet nibh luctus mollis. Proin id turpis sit amet est iaculis euismod at id ex. Duis a interdum felis. Quisque interdum nunc eu blandit ultrices. Integer eget purus scelerisque neque tristique scelerisque id quis orci. Sed nec tortor tristique, malesuada orci ac, suscipit quam. Mauris tempor elit non felis luctus sodales. Nulla elit justo, aliquam a nulla vel, aliquet aliquam metus. Phasellus vulputate est et velit luctus semper. Vivamus convallis tempor urna vitae lacinia. Cras pharetra, arcu vel vehicula viverra, nunc elit feugiat dolor, nec luctus urna sem nec quam.
+        </p>
+      </div>
+    <css-doodle class="doodle">
+    
+      :doodle {
+        @grid: 12 / 100vmax;
+        background: #0a0c27;
+        filter: blur(1.5px);
+        transform: scale(1.1)
+        
+      }
+    
+      @shape: circle;
+      background: hsla(@index(), 70%, 68%, @rand(0.6));
+      transform:
+        scale(@rand(.2, 1.2))
+        translate(
+          @rand(-50%, 50%), @rand(-50%, 50%)
+        );
+
+      animation: test infinite @r(100s, 150s) linear; 
+
+      @keyframes test { 
+        0%{ 
+          transform: translate3d(0, 0, 0)
         }
-        :after {
-          content: \@hex(@r(0x2500, 0x257f));
-          color: hsla(@r(360), 70%, 70%, @r(.9));
-          font-size: 5ßvmax;
+        50%{ 
+          transform: translate3d(@r(-500%, 1000%), @r(-500%, 1500%), 0); 
         }
-      </css-doodle> -->
-
-      <!-- #2 -->
-      <!-- <css-doodle class="doodle">
-        :doodle { 
-          @grid: 20 / 100vmax;
-          
-          grid-gap: 1px; 
+        100%{ 
+          transform: translate3d(0, 0, 0)
         }
+      }
 
-        background: #26c6da;  
+    
+    </css-doodle>
+    
 
-
-        transform: scale(@rand(.1, .9)) translate3d(@r(50px), @r(100px), 0); 
-        background: hsla(@r(360), 85%, @r(70%, 90%), @r(.9)); 
-        border-radius: (@r(80px))
-
-      </css-doodle> -->
-      <css-doodle class="doodle">
-        :doodle { 
-          @grid: 10 / 100vmax; 
-          grid-gap: 4vmax; 
-          <!-- background: #b2dfdb; -->
-          background: #000000;  
-        }
-
-        transform: scale(@r(.1, 1.9)); 
-        translate3d(@r(150px), @r(200px), 0) rotate(@r(360deg)); 
-        background: hsla(@r(200), 85%, @r(0%, 100%), @r(.9)); 
-
-        @shape: clover @r(20); 
-
-        animation: test infinite @r(100s, 150s) linear; 
-
-        @keyframes test { 
-          0%{ 
-            transform: translate3d(0, 0, 0)
-          }
-          50%{ 
-            transform: translate3d(@r(-500%, 1000%), @r(-500%, 1500%), 0); 
-          }
-          100%{ 
-            transform: translate3d(0, 0, 0)
-          }
-        }
-      </css-doodle>
-  
-    <!-- <h1>HI</h1> -->
   </body>
 </html>
