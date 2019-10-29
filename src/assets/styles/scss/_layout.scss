@@ -23,21 +23,15 @@ html, body {
 }
 
 .content { 
-  // margin: 300px auto; 
+  
   z-index: 3;
-  // position: fixed; 
-  // width: 80vw;
-  // margin: 0 auto; 
-  // position: relative;
+  
   position: absolute;
   padding: 20px; 
 
-  top: 30%;
+  top: 20%;
   margin: 0 40px;  
 
-  // height: 50px;
-
-  // height: 200px; 
 
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
   border-radius: 20px;
@@ -54,4 +48,47 @@ h1 {
   font-family: 'Monofett', cursive;
   z-index: 3;
   color: black;  
+}
+
+.content-header { 
+  font-family: 'Bungee Inline', cursive;
+  font-size: 40px; 
+  border-bottom: 1px solid black; 
+}
+
+.details-container { 
+  padding: 10px 0; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.details-img { 
+  max-width: 150px;
+  height: auto;  
+}
+.details-img-col {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 10px 20px 20px 20px;
+
+}
+.content-header-container { 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.social-link { 
+  color: black;
+  font-size: 45px;
+  margin-right: 38px;
+}
+.details-button { 
+  color: white;
+  background-color: black;
+  
+  &:hover { 
+    background-color: white; 
+    color: black; 
+  }
 }
